@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="FileHelper.cs" />
     <Compile Include="Coordinate.cs" />
+    <Compile Include="Location.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

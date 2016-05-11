@@ -21,8 +21,6 @@ namespace FindTheDistance
         {
             Latitude = latitude;
             Longitude = longitude;
-        }
-
-        
+        }        
     }
 }

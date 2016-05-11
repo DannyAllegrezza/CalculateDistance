@@ -12,7 +12,12 @@ namespace FindTheDistance
     {
         static void Main(string[] args)
         {
-            
+
+            var coor = new Coordinate();
+            var dbl = "-122.22";
+            coor.Latitude = Convert.ToDouble(dbl);
+            Console.WriteLine(coor.Latitude);
+
             // Read all the locations from the file and returns a String array
             var allLocations = FileHelper.ReadAllLines("../../Data/location data.txt");
 
