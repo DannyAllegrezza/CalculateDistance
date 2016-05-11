@@ -13,20 +13,37 @@ namespace FindTheDistance
         static void Main(string[] args)
         {
 
-            var coor = new Coordinate();
-            var dbl = "-122.22";
-            coor.Latitude = Convert.ToDouble(dbl);
-            Console.WriteLine(coor.Latitude);
-
             // Read all the locations from the file and returns a String array
-            var allLocations = FileHelper.ReadAllLines("../../Data/location data.txt");
+            var locationData = FileHelper.ReadAllLines("../../Data/location data.txt");
+
+            
+            var listOfLocations = new List<Location>();
+
+            foreach (string line in locationData)
+            {
+                string[] rowValue = line.Split(',');
+                var name = rowValue[0];
+                var latitude = Convert.ToDouble(rowValue[1]);
+                var longitude = Convert.ToDouble(rowValue[2]);
+
+                var coordinate = new Coordinate(latitude, longitude);
+
+                var location = new Location(name, coordinate);
+                listOfLocations.Add(location);
+            }
 
 
-            foreach (string line in allLocations)
+            Console.WriteLine("Unsorted Original List");
+            foreach (string line in locationData)
             {
                 Console.WriteLine(line);
             }
 
+            Console.WriteLine("Sorted List");
+            foreach (Location location in listOfLocations)
+            {
+                Console.WriteLine(location.ToString());
+            }
             Console.ReadLine();
         }
     }
