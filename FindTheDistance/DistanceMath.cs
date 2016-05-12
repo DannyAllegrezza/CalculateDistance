@@ -28,7 +28,7 @@ namespace FindTheDistance
             {
                 distance = distance * 0.8684;
             }
-            return (distance);
+            return Math.Round(distance, 2);
         }
 
        
