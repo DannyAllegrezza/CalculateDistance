@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheDistance", "FindTheDistance\FindTheDistance.csproj", "{C2B6DB2C-2652-4D14-A71E-218DC31CE56D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTD.ConsoleApp", "FindTheDistance\FTD.ConsoleApp.csproj", "{C2B6DB2C-2652-4D14-A71E-218DC31CE56D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E197D77B-0D68-4AFC-936C-9CD8E87566E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheDistanceTest", "FindTheDistanceTest\FindTheDistanceTest.csproj", "{9F81312A-156B-45CE-AEEA-23D80E2F1CB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,15 @@ Global
 		{C2B6DB2C-2652-4D14-A71E-218DC31CE56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2B6DB2C-2652-4D14-A71E-218DC31CE56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2B6DB2C-2652-4D14-A71E-218DC31CE56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F81312A-156B-45CE-AEEA-23D80E2F1CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F81312A-156B-45CE-AEEA-23D80E2F1CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F81312A-156B-45CE-AEEA-23D80E2F1CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F81312A-156B-45CE-AEEA-23D80E2F1CB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F81312A-156B-45CE-AEEA-23D80E2F1CB8} = {E197D77B-0D68-4AFC-936C-9CD8E87566E2}
 	EndGlobalSection
 EndGlobal

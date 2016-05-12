@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FindTheDistance.CommonIO;
+using System;
+
 
 namespace FindTheDistance
 {
@@ -28,7 +26,7 @@ namespace FindTheDistance
 
         public override string ToString()
         {
-            return String.Format("{0}, {1}, {2} - Distance from Origin (0, 0): {3}", Name, Coordinate.Latitude, Coordinate.Longitude, DistanceFromOrigin);
+            return String.Format("{0,-35} {1, 10} {2,10} {3,10}KM from Origin", LocationDisplay.Truncate(Name, 30), Coordinate.Latitude, Coordinate.Longitude, DistanceFromOrigin);
         }
 
         public int CompareTo(Location other)

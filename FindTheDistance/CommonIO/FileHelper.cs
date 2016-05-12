@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FindTheDistance
 {
-    public static class FileHelper
+    public class FileHelper
     {
-        public static string[] ReadAllLines(string filePath)
+        public string[] ReadTextFile(string filePath)
         {
             if (String.IsNullOrEmpty(filePath))
             {
@@ -22,7 +19,7 @@ namespace FindTheDistance
             return cleanData;
         }
 
-        public static string[] CleanData(string[] locationsData)
+        private string[] CleanData(string[] locationsData)
         {
             var latitude = "";
             var longitude = "";
@@ -57,7 +54,7 @@ namespace FindTheDistance
             return cleanedUpDataList.ToArray();
         }
         
-        public static string ConvertCoordinateToDegreesValue(string coordinate)
+        private string ConvertCoordinateToDegreesValue(string coordinate)
         {
             if (coordinate.Contains("s"))
             {
@@ -75,6 +72,7 @@ namespace FindTheDistance
             
             else
             {
+                // Just drop the last digit (the cardinal value)
                 coordinate = coordinate.Remove(coordinate.Length - 1);
             }
 

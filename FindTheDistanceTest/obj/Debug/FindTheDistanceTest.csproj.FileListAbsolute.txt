@@ -1,0 +1,7 @@
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistanceTest\bin\Debug\FindTheDistanceTest.dll
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistanceTest\bin\Debug\FindTheDistanceTest.pdb
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistanceTest\bin\Debug\FindTheDistance.exe
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistanceTest\bin\Debug\FindTheDistance.pdb
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistanceTest\obj\Debug\FindTheDistanceTest.csprojResolveAssemblyReference.cache
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistanceTest\obj\Debug\FindTheDistanceTest.dll
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistanceTest\obj\Debug\FindTheDistanceTest.pdb

@@ -1,0 +1,1 @@
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\Core.Common\obj\Debug\Core.Common.csprojResolveAssemblyReference.cache

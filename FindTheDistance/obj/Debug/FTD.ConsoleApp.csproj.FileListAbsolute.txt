@@ -1,0 +1,5 @@
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistance\bin\Debug\FindTheDistance.exe.config
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistance\bin\Debug\FindTheDistance.exe
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistance\bin\Debug\FindTheDistance.pdb
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistance\obj\Debug\FindTheDistance.exe
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistance\obj\Debug\FindTheDistance.pdb
