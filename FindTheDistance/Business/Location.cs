@@ -20,13 +20,20 @@ namespace FindTheDistance
 
         public Location(string name, Coordinate coords)
         {
-            this.Name = name;
+            if (String.IsNullOrEmpty(name))
+            {
+                this.Name = "N/A -- No Location Name Provided!";
+            }
+            else
+            {
+                this.Name = name;
+            }
             this.Coordinate = coords; 
         }
 
         public override string ToString()
         {
-            return String.Format("{0,-35} {1, 10} {2,10} {3,10}KM from Origin", LocationDisplay.Truncate(Name, 30), Coordinate.Latitude, Coordinate.Longitude, DistanceFromOrigin);
+            return String.Format("{0,-40} {1, 10} {2,10} {3,10}KM from Origin", LocationDisplay.Truncate(Name, 35), Coordinate.Latitude, Coordinate.Longitude, DistanceFromOrigin);
         }
 
         public int CompareTo(Location other)

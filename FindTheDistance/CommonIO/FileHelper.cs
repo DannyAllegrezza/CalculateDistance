@@ -10,10 +10,21 @@ namespace FindTheDistance
         {
             if (String.IsNullOrEmpty(filePath))
             {
-                throw new NullReferenceException();
+                throw new ArgumentException("Unable to read file path. Please ensure file is located in the Data folder", "filePath");
             }
-            
-            var readText = File.ReadAllLines(filePath);
+
+            var readText = new string[] { };
+
+            try
+            {
+                readText = File.ReadAllLines(filePath);
+            }
+            catch (IOException ex)
+            {
+                throw new FileNotFoundException(String.Format("File not found! Cannot find file at {0}. Please check that the file exists in the Data folder", filePath));
+
+            }
+
             var cleanData = CleanData(readText);
 
             return cleanData;

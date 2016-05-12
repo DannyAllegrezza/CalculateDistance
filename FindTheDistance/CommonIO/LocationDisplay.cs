@@ -6,10 +6,13 @@ namespace FindTheDistance.CommonIO
     public class LocationDisplay
     {
         public List<Location> listOfLocations { get; set; }
+
         public void DisplayToConsole()
         {
+            var pathToTextFile = "../../Data/location data.txt";
+
             var fileHelper = new FileHelper();
-            var locationData = fileHelper.ReadTextFile("../../Data/location data.txt");
+            var locationData = fileHelper.ReadTextFile(pathToTextFile);
 
             CreateLocationsFromData(locationData);
             DisplayOriginalUnsortedData();
@@ -28,8 +31,15 @@ namespace FindTheDistance.CommonIO
                 var name = rowValue[0];
                 var latitude = Convert.ToDouble(rowValue[1]);
                 var longitude = Convert.ToDouble(rowValue[2]);
-
-                var coordinate = new Coordinate(latitude, longitude);
+                var coordinate = new Coordinate();
+                try
+                {
+                    coordinate = new Coordinate(latitude, longitude);
+                }
+                catch (Exception)
+                {
+                    name += "(NOT VALID LOCATION!)";  
+                }
 
                 var location = new Location(name, coordinate);
                 listOfLocations.Add(location);
@@ -71,7 +81,7 @@ namespace FindTheDistance.CommonIO
         private void PrintHeaders(string message)
         {
             Console.WriteLine(String.Format("----------------------------------- {0} -----------------------------------", message));
-            Console.WriteLine(String.Format("{0,-35} {1, 10} {2,10} {3,25}", "Location Name", "Latitude", "Longitude", "Distance from Origin"));
+            Console.WriteLine(String.Format("{0,-40} {1, 10} {2,10} {3,25}", "Location Name", "Latitude", "Longitude", "Distance from Origin"));
             Console.WriteLine("-----------------------------------------------------------------------------------");
         }
     }

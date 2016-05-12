@@ -3,3 +3,4 @@ C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\Fi
 C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistance\bin\Debug\FindTheDistance.pdb
 C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistance\obj\Debug\FindTheDistance.exe
 C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistance\obj\Debug\FindTheDistance.pdb
+C:\Users\Danny\Documents\Visual Studio 2015\Projects\CodeWars\FindTheDistance\FindTheDistance\obj\Debug\FTD.ConsoleApp.csprojResolveAssemblyReference.cache

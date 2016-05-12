@@ -14,7 +14,15 @@ namespace FindTheDistance
         {
             // Main entry point for the Console app
             var app = new LocationDisplay();
-            app.DisplayToConsole();
+            try
+            {
+                app.DisplayToConsole();
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.Message);
+                Console.ReadLine();
+            }
         }
     }
 }

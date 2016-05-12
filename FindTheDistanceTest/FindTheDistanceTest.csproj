@@ -52,8 +52,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DistanceMathTests.cs" />
     <Compile Include="FileHelperTest.cs" />
-    <Compile Include="LocationTest.cs" />
+    <Compile Include="LocationCoordinateTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
