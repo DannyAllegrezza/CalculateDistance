@@ -21,7 +21,7 @@ namespace FindTheDistance
             }
             catch (IOException ex)
             {
-                throw new FileNotFoundException(String.Format("File not found! Cannot find file at {0}. Please check that the file exists in the Data folder", filePath));
+                throw new FileNotFoundException(String.Format("File not found! \n{0} \nPlease place your file in the directory listed above.", ex.Message));
 
             }
 

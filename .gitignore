@@ -45,3 +45,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/FindTheDistance/bin/Release
+/FindTheDistance/obj/Release
+/FindTheDistanceTest/bin/Release
+/FindTheDistanceTest/obj/Release
