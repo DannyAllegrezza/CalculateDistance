@@ -1,4 +1,4 @@
-## aWhere Coding Challenge
+## Coding Challenge
 Your task is to write a working program that reads data from the "location data.txt" file, sorts the data, and outputs the result.
 
 Sort the locations in ascending order by distance from the decimal degrees location 0,0.
